@@ -1,0 +1,16 @@
+!!! 5
+%html
+  %head
+    %title Stock Exchange app in Sinatra
+    %link{:href=> 'stylesheets/bootstrap.min.css', :rel => 'stylesheet', :type => 'text/css'}
+    :css
+      .container {
+        margin-top: 30px;
+      }
+
+  %body
+    .container
+      %h1 Stock Exchange with Sinatra and HAML
+      %p Information current as of #{@stock.row3} on #{@stock.row2}
+      %h3 #{@stock.row0} last trade was $ #{@stock.row1} (increase of #{@stock.row4}%)
+      %p Opened at #{@stock.row5}. Range from the day $#{@stock.row7} -  $#{@stock.row6}
